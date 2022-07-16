@@ -1,0 +1,36 @@
+name: react-native-blur
+
+type:
+  - android
+
+up:
+  - ruby: 3.1.1
+  - bundler
+  - node:
+      yarn: true
+      version: v16.13.0
+      packages:
+        - ./
+  - android:
+      packages:
+        - cmdline-tools;latest
+        - emulator
+        - platform-tools
+        - build-tools;29.0.2
+        - platforms;android-29
+        - extras;android;m2repository
+        - extras;google;m2repository
+        - system-images;android-29;google_apis;x86_64
+        - system-images;android-29;google_apis;arm64-v8a
+  - gradle # This task pulls and stores the token locally.
+
+commands:
+  clean:
+    desc: 'Cleans the environment'
+    run: |
+      rm -Rf **/node_modules/
+      yarn nuke && yarn cache clean
+  clean-android:
+    run: cd android && rm -rf .gradle && rm -rf build-cache && ./gradlew clean && cd ..
+
+

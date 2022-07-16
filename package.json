@@ -1,0 +1,53 @@
+{
+  "name": "react-native-blur",
+  "version": "1.0.0",
+  "description": "Blur views and bitmaps",
+  "private": true,
+  "hasNative": true,
+  "engines": {
+    "node": "~16.13.0"
+  },
+  "scripts": {
+    "lint": "eslint ./packages --ext .ts,.tsx",
+    "lint:fix": "yarn lint:ts --fix",
+    "nuke": "yarn clean && find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +",
+    "type-check": "tsc --pretty --noEmit",
+    "format": "prettier --write src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shopify/react-native-blur.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shopify/react-native-blur/issues"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.67.4",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@shopify/eslint-plugin": "^42.0.1",
+    "@types/jest": "^27.0.1",
+    "@types/react": "17.0.43",
+    "@types/react-native": "0.67.6",
+    "@typescript-eslint/parser": "^5.5.0",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@testing-library/react-native": "^9.1.0",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^28.0.2",
+    "eslint": "7.28.0",
+    "eslint-plugin-prettier": "3.4.0",
+    "jest": "^27.0.3",
+    "prettier": "2.5.1",
+    "prettier-eslint": "12.0.0",
+    "prop-types": "15.7.2",
+    "typescript": "4.4.3",
+    "ts-jest": "27.1.5"
+  },
+  "homepage": "https://github.com/Shopify/react-native-blur"
+}
