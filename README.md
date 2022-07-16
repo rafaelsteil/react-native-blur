@@ -1,0 +1,1 @@
+ Blur views and bitmaps
