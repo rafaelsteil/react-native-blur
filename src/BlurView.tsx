@@ -1,7 +1,6 @@
 import React from 'react';
 import {requireNativeComponent} from 'react-native';
-
-import {BlurViewProperties} from '.';
+import type {BlurViewProperties} from './types';
 
 export const BlurView = ({radius, style, children}: BlurViewProperties) => {
   return (
@@ -11,4 +10,4 @@ export const BlurView = ({radius, style, children}: BlurViewProperties) => {
   );
 };
 
-const NativeBlurView = requireNativeComponent<BlurViewProperties>('BlurView');
+const NativeBlurView = requireNativeComponent<BlurViewProperties>('HokoBlurView');

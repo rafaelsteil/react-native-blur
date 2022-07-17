@@ -5,7 +5,6 @@
   "scss.validate": false,
   "stylelint.enable": true,
   "typescript.tsdk": "./node_modules/typescript/lib",
-  "flow.enabled": false,
   "files.exclude": {
     ".dev": true,
     "**/.DS_Store": true,

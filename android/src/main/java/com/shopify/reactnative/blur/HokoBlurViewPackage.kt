@@ -5,8 +5,8 @@ import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 
 @Suppress("unused")
-class BlurPackage : ReactPackage {
+class HokoBlurViewPackage : ReactPackage {
     override fun createNativeModules(reactContext: ReactApplicationContext) = mutableListOf<NativeModule>()
 
-    override fun createViewManagers(reactContext: ReactApplicationContext) = listOf(BlurViewManager())
+    override fun createViewManagers(reactContext: ReactApplicationContext) = listOf(HokoBlurViewManager())
 }

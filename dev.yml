@@ -26,11 +26,9 @@ up:
 
 commands:
   clean:
-    desc: 'Cleans the environment'
+    desc: 'Clean the environment'
     run: |
       rm -Rf **/node_modules/
       yarn nuke && yarn cache clean
   clean-android:
     run: cd android && rm -rf .gradle && rm -rf build-cache && ./gradlew clean && cd ..
-
-

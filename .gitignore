@@ -104,3 +104,5 @@ TODO.md
 # Jest
 .jest/
 **/__tests__/coverage/
+
+lib/
